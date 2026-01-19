@@ -1,0 +1,173 @@
+/* =====================================
+   AWWWARDS-STYLE TYPOGRAPHY SYSTEM
+   FONT: INSTRUMENT SANS
+   BASE: 16PX
+   CASE: UPPERCASE
+===================================== */
+
+/* Base */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Instrument Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin: 0;
+  padding: 0;
+}
+
+/* Reset margins */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+small {
+  margin: 0;
+}
+
+/* -------------------------------------
+   BODY TEXT
+------------------------------------- */
+
+p {
+  font-size: clamp(0.75rem, 0.9vw, 0.875rem); /* 12px → 14px */
+  max-width: 65ch;
+}
+
+/* Optional normal-case utility */
+.text-normal {
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+/* -------------------------------------
+   HEADINGS
+------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.text-size-h1,
+.text-size-h2,
+.text-size-h3,
+.text-size-h4,
+.text-size-h5 {
+  font-family: 'Instrument Sans', sans-serif;
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: 0.08em;
+}
+
+/* Heading scale */
+h1,
+.text-size-h1 {
+  font-size: clamp(3rem, 8vw, 6rem); /* 48px → 96px */
+}
+
+h2,
+.text-size-h2 {
+  font-size: clamp(2.25rem, 6vw, 4rem); /* 36px → 64px */
+}
+
+h3,
+.text-size-h3 {
+  font-size: clamp(1.75rem, 4vw, 2.75rem); /* 28px → 44px */
+}
+
+h4,
+.text-size-h4 {
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem); /* 20px → 28px */
+}
+
+h5,
+.text-size-h5 {
+  font-size: clamp(1rem, 1.8vw, 1.25rem); /* 16px → 20px */
+}
+
+/* -------------------------------------
+   SMALL / META TEXT
+------------------------------------- */
+
+.text-caption {
+  font-size: clamp(0.6875rem, 1vw, 0.75rem); /* 11px → 12px */
+  letter-spacing: 0.12em;
+}
+
+small,
+.text-small {
+  font-size: clamp(0.625rem, 0.9vw, 0.6875rem); /* 10px → 11px */
+  letter-spacing: 0.14em;
+}
+
+/* Section labels (01 — SELECTED WORK) */
+.text-label {
+  font-size: clamp(0.5625rem, 0.8vw, 0.625rem); /* 9px → 10px */
+  letter-spacing: 0.18em;
+  opacity: 0.7;
+}
+
+/* -------------------------------------
+   LINKS & UI TEXT
+------------------------------------- */
+
+a {
+  text-decoration: none;
+  color: inherit;
+  letter-spacing: 0.12em;
+}
+
+/* Buttons / CTAs */
+.button,
+.btn {
+  font-size: clamp(0.75rem, 1vw, 0.875rem);
+  letter-spacing: 0.14em;
+  font-weight: 500;
+}
+
+/* -------------------------------------
+   LISTS
+------------------------------------- */
+
+ul,
+ol {
+  padding-left: 1.25rem;
+}
+
+li {
+  font-size: clamp(0.75rem, 0.9vw, 0.875rem);
+  letter-spacing: 0.06em;
+}
+
+/* -------------------------------------
+   STRONG / EMPHASIS
+------------------------------------- */
+
+strong {
+  font-weight: 600;
+}
+
+em {
+  font-style: normal;
+  opacity: 0.85;
+}
+
+/* -------------------------------------
+   OPTIONAL DARK MODE TUNING
+------------------------------------- */
+
+body.dark {
+  background: #0d0d0d;
+  color: #f5f5f5;
+}
+
+/* -------------------------------------
+   END OF FILE
+------------------------------------- */
